@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/awesome-spa/static/css/main.15dc2bab.css",
+    "main.js": "/awesome-spa/static/js/main.197d18e0.js",
+    "static/js/488.bd155bf8.chunk.js": "/awesome-spa/static/js/488.bd155bf8.chunk.js",
+    "index.html": "/awesome-spa/index.html",
+    "main.15dc2bab.css.map": "/awesome-spa/static/css/main.15dc2bab.css.map",
+    "main.197d18e0.js.map": "/awesome-spa/static/js/main.197d18e0.js.map",
+    "488.bd155bf8.chunk.js.map": "/awesome-spa/static/js/488.bd155bf8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.15dc2bab.css",
+    "static/js/main.197d18e0.js"
+  ]
+}
