@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import Routes instead of Switch
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'; // Import Routes instead of Switch
 import './style/App.css';
 import Navbar from './component/Navbar';
 import Carousel from './component/Carousel';
@@ -40,7 +40,8 @@ function App() {
       <Router>  
         <Navbar title={"Divine Spa"} isFooter={true}/>
         <Routes>
-          <Route path='/'element={<Homepage images={images}/>}/>
+          <Route path="/" element={<Navigate to="/home" />} />
+          <Route path='/home'element={<Homepage images={images}/>}/>
           <Route path="/nails" element={<SpaCard images={images}/>} />
           <Route path="/facial" element={<SpaCard images={images}/>} />
           <Route path="/wax" element={<SpaCard images={images}/>} />
