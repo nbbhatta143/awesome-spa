@@ -1,0 +1,73 @@
+/* General Carousel Styling */
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 50%; /* Adjust height as needed for better visuals */
+  overflow: hidden; /* Hide images that are off-screen */
+  margin-top: 20px; /* Add some space between the navbar and the carousel */
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease; /* Smooth transition for sliding */
+}
+
+.carousel-image {
+  min-width: 100%; /* Each image will take up full width */
+  height: 50%; /* Full height for each image */
+  position: relative;
+  overflow: hidden; /* Ensure the image doesn’t overflow */
+  display: flex;
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center; /* Centers the image vertically */
+}
+
+/* Image Styling */
+.carousel-image img {
+  width: 100%;
+  height: 50%; /* Ensure image fills the height of the container */
+  object-fit: cover; /* Ensures image covers the entire div without distortion */
+}
+
+/* Description Styling */
+.carousel-image .description {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  padding: 10px;
+  font-size: 18px;
+  position: absolute;
+  bottom: 10px; /* Position description at the bottom */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  width: 80%;
+  text-align: center;
+}
+
+/* Button Styling for Navigation */
+.carousel-prev, .carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
+
+/* Mobile Responsiveness - Keep the description at the bottom for larger screens */
+@media (min-width: 768px) {
+  .carousel-image .description {
+    bottom: 20px; /* Move description up slightly on larger screens */
+    width: 100%; /* Text spans the full width of the image */
+  }
+}

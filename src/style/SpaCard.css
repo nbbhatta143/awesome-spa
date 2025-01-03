@@ -1,0 +1,93 @@
+/* SpaCard Styling */
+.spa-card {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* width: 100%; Adjust width for side-by-side layout */
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* float: left; Default float to left */
+}
+
+.spa-card.reverse {
+  flex-direction: row-reverse; /* Reverse the layout (image-right, text-left) */
+  /* float: right; Float to the right for reverse cards */
+}
+
+.spa-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.spa-card-image {
+  flex: 1;
+  overflow: hidden; /* Hide any overflowing image */
+  border-radius: 10px;
+}
+
+.spa-card-image img {
+  width: 100%; /* Ensure the image fills the container width */
+  height: 100%; /* Fixed height for images to maintain uniformity */
+  object-fit: cover; /* Ensures image fills the container without distortion */
+  border-radius: 10px;
+}
+
+/* Text content Styling */
+.spa-card-content {
+  flex: 2;
+  padding-left: 20px;
+}
+
+.spa-card-content h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.spa-card-content p {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.spa-card-content .price {
+  font-size: 18px;
+  color: #FF5733; /* Highlight price with a different color */
+  font-weight: bold;
+}
+
+/* Clear floats after cards to ensure the layout doesn't break */
+.card-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .spa-card {
+    width: 100%; /* Full width on smaller screens */
+    margin: 10px 0; /* Adjust margins for smaller screens */
+  }
+
+  .spa-card-image img {
+    height: 150px; /* Smaller image height on mobile */
+  }
+
+  .spa-card-content h3 {
+    font-size: 20px; /* Adjust heading size on mobile */
+  }
+
+  .spa-card-content p {
+    font-size: 14px; /* Adjust text size on mobile */
+  }
+
+  .spa-card-content .price {
+    font-size: 16px; /* Adjust price size on mobile */
+  }
+}

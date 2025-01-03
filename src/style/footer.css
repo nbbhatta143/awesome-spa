@@ -1,0 +1,59 @@
+/* Footer.css */
+.footer {
+  background-color: #333; /* Dark background color for footer */
+  color: #fff; /* White text color */
+  padding: 20px 0;
+  text-align: center; /* Center the text */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav li {
+  margin: 0 15px;
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+.footer-copyright p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-nav ul {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .footer-nav li {
+    margin: 10px 0;
+  }
+}

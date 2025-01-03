@@ -1,0 +1,277 @@
+/*
+.App {
+  font-family: Arial, sans-serif;
+}
+
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0px;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.navbar .logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); 
+}
+
+.navbar .logo h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu ul li {
+  margin-right: 20px;
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.menu ul li a:hover {
+  text-decoration: underline;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  left: 20px; 
+  justify-content: center;
+  align-items: center;
+  width: 30px; 
+  height: 30px;
+}
+
+.hamburger .bar {
+  width: 25px;  
+  height: 4px;  
+  margin: 4px 0;  
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+ 
+  .menu {
+    display: none;
+  }
+
+
+  .hamburger {
+    display: flex;
+  }
+
+  
+  .menu.open {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 20%;
+    background-color: #333;
+    padding: 20px;
+    transform: translateX(0); 
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .menu ul {
+    display: block;
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .menu ul li {
+    margin-bottom: 10px;
+  }
+
+  .menu ul li a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .menu ul li a:hover {
+    text-decoration: underline;
+  }
+
+  .App {
+    overflow: hidden; 
+  }
+} */
+/* App.css */
+
+/* Basic layout and style for the app */
+.App {
+  font-family: Arial, sans-serif;
+}
+
+/* Header and navigation bar styles */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+/* Positioning for the hamburger menu and logo */
+.navbar .logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); /* Centers the logo */
+}
+
+.navbar .logo h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Navbar menu (desktop) */
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu ul li {
+  margin-right: 20px;
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.menu ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hamburger menu (mobile) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  left: 0px; /* Position the hamburger icon on the left */
+  justify-content: center;
+  align-items: center;
+  width: 30px; /* Set a fixed width */
+  height: 30px; /* Set a fixed height */
+}
+
+.hamburger .bar {
+  width: 25px;  /* Ensure each bar has enough width */
+  height: 4px;  /* Make bars taller for visibility */
+  margin: 4px 0;  /* Add space between bars */
+  background-color: white;
+  z-index: 2;
+}
+
+/* Mobile-specific styles (screens less than 768px wide) */
+@media (max-width: 768px) {
+  /* Hide the regular menu */
+  .menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Start off-screen to the left */
+    bottom: 0;
+    width: 20%; /* Menu width */
+    background-color: #333;
+    padding: 20px;
+    transition: left 0.3s ease-in-out; /* Apply smooth sliding transition */
+    z-index: 2;
+  }
+  .carousel-image img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+  /* Show the hamburger menu on the left side */
+  .hamburger {
+    display: flex;
+  }
+
+  /* When the menu is open, move it into view */
+  .menu.open {
+    left: 0; /* Slide the menu to the visible position */
+    /* background-color: #f7c9ff ;   */
+  }
+
+  .menu ul {
+    display: block;
+    /* top: 5%; */
+  }
+
+  .menu ul li {
+    margin-bottom: 5%;
+
+  }
+
+  .menu ul li a {
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .menu ul li a:hover {
+    text-decoration: underline;
+  }
+
+  /* Body content will move when menu is open */
+  .App {
+    overflow: hidden; /* Prevent body scroll when menu is open */
+  }
+
+  .footer ul {
+    padding: 0;
+    list-style-type: none; /* Removes default bullet points */
+  }
+  
+  .footer li {
+    margin-bottom: 1%;
+    display: inline; /* Makes list items inline */
+  }
+  
+  .footer ul li a {
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer ul li a:hover {
+    text-decoration: underline;
+  }
+  
+}
