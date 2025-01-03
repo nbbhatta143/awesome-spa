@@ -9,6 +9,7 @@ import BookingPage from './component/BookingPage';
 import OIP from './images/OIP.jpg';
 import Waxing from './images/waxing.png';
 import Threading from './images/threading.jpg'
+import Homepage from './component/HomePage'
 
 
   // Spa services data
@@ -33,23 +34,13 @@ import Threading from './images/threading.jpg'
     },
   ];
 
-
 function App() {
   return (
     <div className="App">
       <Router>  
         <Navbar title={"Divine Spa"} isFooter={true}/>
         <Routes>
-          <Route path='/'element={
-            <>
-              <header className="App-header">
-                <Carousel images={images} />
-                <div className="card-container">
-                  <SpaCard images={images}/>
-                </div>
-              </header>
-            </>}
-          />
+          <Route path='/'element={<Homepage images={images}/>}/>
           <Route path="/nails" element={<SpaCard images={images}/>} />
           <Route path="/facial" element={<SpaCard images={images}/>} />
           <Route path="/wax" element={<SpaCard images={images}/>} />
