@@ -6,23 +6,27 @@ import SpaCard from './component/SpaCard';
 import Footer from './component/Footer';
 import BookingPage from './component/BookingPage';
 
+import OIP from './images/OIP.jpg';
+import Waxing from './images/waxing.png';
+import Threading from './images/threading.jpg'
+
 
   // Spa services data
   const images = [
     {
-      src: 'https://th.bing.com/th/id/OIP.HZAPB-Rjmsw0hAqip73azwHaDq?rs=1&pid=ImgDetMain',
+      src: OIP,
       alt: 'Tinting Service',
       description: 'Nail care services for a perfect look.',
       price: '30'
     },
     {
-      src: 'https://th.bing.com/th/id/R.3eeaa0b56be498d9430b4e714492dea7?rik=UX1c4RBj7ybmZg&pid=ImgRaw&r=0',
+      src: Threading,
       alt: "Threading",
       description: 'Relaxing facial treatments for a rejuvenated skin.',
       price: '30'
     },
     {
-      src: 'https://th.bing.com/th/id/R.998991e212bd8d8e43e9f1903305bea0?rik=e3WYCZqey7W%2bOQ&pid=ImgRaw&r=0',
+      src:  Waxing,
       alt: 'Waxing Service',
       description: 'Get smooth skin with our waxing services.',
       price: '30'
