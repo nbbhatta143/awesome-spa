@@ -34,7 +34,7 @@ function App() {
   return (
     <div className="App">
       <Router>  
-        <Navbar title={"SPA Salon"} isFooter={true}/>
+        <Navbar title={"Divine Spa"} isFooter={true}/>
         <Routes>
           <Route path='/'element={
             <>
