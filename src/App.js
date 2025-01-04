@@ -1,7 +1,6 @@
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'; // Import Routes instead of Switch
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import Routes instead of Switch
 import './style/App.css';
 import Navbar from './component/Navbar';
-import Carousel from './component/Carousel';
 import SpaCard from './component/SpaCard';
 import Footer from './component/Footer';
 import BookingPage from './component/BookingPage';
