@@ -155,7 +155,7 @@ header {
 .navbar .logo {
   position: absolute;
   left: 50%;
-  transform: translateX(-70%); /* Centers the logo */
+  transform: translateX(-75%); /* Centers the logo */
 }
 
 .navbar {
