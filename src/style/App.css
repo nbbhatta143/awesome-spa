@@ -155,7 +155,7 @@ header {
 .navbar .logo {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%); /* Centers the logo */
+  transform: translateX(-70%); /* Centers the logo */
 }
 
 .navbar {
@@ -184,14 +184,9 @@ header {
 /* Logo specific styles */
 .logo ul {
   list-style: none; /* Removes bullet points */
-  padding: 0;
-  margin: 0;
+
 }
 
-.logo ul li {
-  margin: 0;
-  padding: 0;
-}
 
 .logo ul li a {
   text-decoration: none; /* Removes underline */
@@ -224,7 +219,7 @@ header {
 }
 
 /* Mobile-specific styles (screens less than 768px wide) */
-@media (max-width: 957px) {
+@media (max-width: 970px) {
   /* Hide the regular menu */
   .menu {
     display: block;
