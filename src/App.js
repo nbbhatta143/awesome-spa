@@ -37,12 +37,11 @@ import Homepage from './component/HomePage'
 function App() {
   return (
     <div className="App">
-      <Router>  
+      <Router basename={process.env.PUBLIC_URL}>
         <Navbar title={"Divine Spa"} isFooter={true}/>
-        <Homepage images={images}/>
         <Routes>
           <Route path="/" element={<Navigate to="/home" />} />
-          
+          <Route path="/home" element={<Homepage images={images} />} />
           <Route path="/nails" element={<SpaCard images={images}/>} />
           <Route path="/facial" element={<SpaCard images={images}/>} />
           <Route path="/wax" element={<SpaCard images={images}/>} />

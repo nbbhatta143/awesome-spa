@@ -1,5 +1,7 @@
 // src/components/BookingPage.js
 import React, { useState } from 'react';
+import { useParams } from 'react-router-dom';
+
 import emailjs from 'emailjs-com'; // Import EmailJS
 import '../style/BookingPage.css'
 
@@ -14,7 +16,8 @@ const BookingPage = () => {
     date: '',
     time: '',
   });
-
+  // Get the service name from the URL
+  const { serviceName } = useParams();
   // Handle input change
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -59,7 +62,7 @@ const BookingPage = () => {
 
   return (
     <div className="booking-page">
-      <h1>Book Your Spa Appointment</h1>
+      <h1>Book Your Appointment for {serviceName}</h1>
       <form onSubmit={handleSubmit} className="booking-form">
         <div className="form-group">
           <label htmlFor="firstName">First Name</label>
