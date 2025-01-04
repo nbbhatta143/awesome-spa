@@ -40,8 +40,7 @@ function App() {
       <Router basename={process.env.PUBLIC_URL}>
         <Navbar title={"Divine Spa"} isFooter={true}/>
         <Routes>
-          <Route path="/" element={<Navigate to="/home" />} />
-          <Route path="/home" element={<Homepage images={images} />} />
+          <Route path="/" element={<Homepage images={images} />} />
           <Route path="/nails" element={<SpaCard images={images}/>} />
           <Route path="/facial" element={<SpaCard images={images}/>} />
           <Route path="/wax" element={<SpaCard images={images}/>} />
