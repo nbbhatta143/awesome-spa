@@ -21,7 +21,7 @@ function Navbar({title, isFooter}) {
       <header>
         <nav className="navbar">
           <div className="logo">
-            <h1>{title}</h1>
+            <ul> <li><a href='/' >{title}</a></li></ul>
           </div>
           <div className={!isFooter? 'footer': `menu ${isOpen ? 'open' : ''}`}>
             <ul>
