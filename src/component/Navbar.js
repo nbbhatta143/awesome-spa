@@ -30,6 +30,7 @@ function Navbar({title, isFooter}) {
               <li><a href="#wax" onClick={closeMenu}>Wax</a></li>
               <li><a href="#henna" onClick={closeMenu}>Henna Tatto</a></li>
               <li><a href="#facial" onClick={closeMenu}>Facial</a></li>
+              <li><a href="#/" onClick={closeMenu}>Home</a></li>
             </ul>
           </div>
           {isFooter && (

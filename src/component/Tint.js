@@ -2,7 +2,7 @@
 import React from 'react';
 import SpaCard from './SpaCard'; // Import the SpaCard component
 import '../style/Tint.css'; // Optional: Create and link styles specific to Tint view
-import BackToHomeButton from './BackToHomeButton'; // Import the BackToHomeButton component
+// import BackToHomeButton from './BackToHomeButton'; // Import the BackToHomeButton component
 
 import relaxing from "../images/sddefault.jpg"
 import skiltreatment from "../images/the-dermalogica-skin-treatment.png"
@@ -37,7 +37,7 @@ function Tint() {
       <div className="spa-card-list">
         <SpaCard images={spaServices} />
       </div>
-      <BackToHomeButton /> 
+      {/* <BackToHomeButton />  */}
     </div>
   );
 }
