@@ -34,9 +34,10 @@ import Homepage from './component/HomePage'
   ];
 
 function App() {
+  // basename={process.env.PUBLIC_URL}
   return (
     <div className="App">
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router >
         <Navbar title={"Divine Spa"} isFooter={true}/>
         <Routes>
           <Route path="/" element={<Homepage images={images} />} />

@@ -16,7 +16,6 @@ function SpaCard({ images }) {
     //  reverse
     images.map((image, index) => 
       <div className={`spa-card ${index % 2 === 1 ? 'reverse' : ''}`}>
-         <h2>Our Spa Services</h2>
         <div className="spa-card-image">
           <img src={image.src} alt={image.alt} />
         </div>
