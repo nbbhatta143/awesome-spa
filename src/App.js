@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import Routes instead of Switch
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'; // Import Routes instead of Switch
 import './style/App.css';
 import Navbar from './component/Navbar';
 import SpaCard from './component/SpaCard';
