@@ -10,7 +10,9 @@ import Waxing from './images/waxing.png';
 import Threading from './images/threading.jpg'
 import Homepage from './component/HomePage'
 import Tint from './component/Tint';
-
+import relaxing from "./images/sddefault.jpg"
+import skiltreatment from "./images/the-dermalogica-skin-treatment.png"
+import hot_stone_massage from "./images/1296x728_HEADER_benefits-of-hot-stone-massage.jpg"
 
   // Spa services data
   const images = [
@@ -32,6 +34,24 @@ import Tint from './component/Tint';
       description: 'Get smooth skin with our waxing services.',
       price: '30'
     },
+     {
+        src:  relaxing,
+        alt: 'Relaxing Massage',
+        description: 'Experience the ultimate relaxation with our soothing massages.',
+        price: 120,
+      },
+      {
+        src: skiltreatment,
+        alt: 'Facial Treatment',
+        description: 'Rejuvenate your skin with our revitalizing facial treatments.',
+        price: 90,
+      },
+      {
+        src: hot_stone_massage,
+        alt: 'Hot Stone Therapy',
+        description: 'Relieve tension with our hot stone therapy session.',
+        price: 150,
+      },
   ];
 
 function App() {
