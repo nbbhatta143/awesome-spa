@@ -9,6 +9,7 @@ import OIP from './images/OIP.jpg';
 import Waxing from './images/waxing.png';
 import Threading from './images/threading.jpg'
 import Homepage from './component/HomePage'
+import Tint from './component/Tint';
 
 
   // Spa services data
@@ -41,7 +42,7 @@ function App() {
         <Navbar title={"Divine Spa"} isFooter={true}/>
         <Routes>
           <Route path="/" element={<Homepage images={images} />} />
-          <Route path="/nails" element={<SpaCard images={images}/>} />
+          <Route path="/tint" element={<Tint />} />
           <Route path="/facial" element={<SpaCard images={images}/>} />
           <Route path="/wax" element={<SpaCard images={images}/>} />
           <Route path="/spaservices" element={<SpaCard images={images} />} />

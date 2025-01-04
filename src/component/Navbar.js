@@ -1,9 +1,11 @@
 // src/App.js
 import React, { useState } from 'react';
 import '../style/App.css'; // We'll use this for custom styles
-import { Link } from 'react-router-dom';
+
+
 
 function Navbar({title, isFooter}) {
+
   const [isOpen, setIsOpen] = useState(false);
 
   // Toggle menu open/close
