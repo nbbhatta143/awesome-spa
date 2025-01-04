@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/awesome-spa/static/css/main.b6621f61.css",
-    "main.js": "/awesome-spa/static/js/main.0c4a37d9.js",
+    "main.css": "/awesome-spa/static/css/main.46cd0840.css",
+    "main.js": "/awesome-spa/static/js/main.7c3b159f.js",
     "static/js/488.bd155bf8.chunk.js": "/awesome-spa/static/js/488.bd155bf8.chunk.js",
     "static/media/threading.jpg": "/awesome-spa/static/media/threading.96370b118310b9366d17.jpg",
     "static/media/waxing.png": "/awesome-spa/static/media/waxing.643b610fcb14e05c16ea.png",
+    "static/media/the-dermalogica-skin-treatment.png": "/awesome-spa/static/media/the-dermalogica-skin-treatment.ffb7cb5f26589ab2cd51.png",
+    "static/media/1296x728_HEADER_benefits-of-hot-stone-massage.jpg": "/awesome-spa/static/media/1296x728_HEADER_benefits-of-hot-stone-massage.efb6cbf9c9e1cbb5d297.jpg",
+    "static/media/sddefault.jpg": "/awesome-spa/static/media/sddefault.0f8e653a2916fee68f61.jpg",
     "static/media/OIP.jpg": "/awesome-spa/static/media/OIP.8448b51ab82f6ca3e56b.jpg",
     "index.html": "/awesome-spa/index.html",
-    "main.b6621f61.css.map": "/awesome-spa/static/css/main.b6621f61.css.map",
-    "main.0c4a37d9.js.map": "/awesome-spa/static/js/main.0c4a37d9.js.map",
+    "main.46cd0840.css.map": "/awesome-spa/static/css/main.46cd0840.css.map",
+    "main.7c3b159f.js.map": "/awesome-spa/static/js/main.7c3b159f.js.map",
     "488.bd155bf8.chunk.js.map": "/awesome-spa/static/js/488.bd155bf8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6621f61.css",
-    "static/js/main.0c4a37d9.js"
+    "static/css/main.46cd0840.css",
+    "static/js/main.7c3b159f.js"
   ]
 }
