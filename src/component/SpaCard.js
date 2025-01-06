@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import '../style/SpaCard.css';
 import BookButton from '../component/BookButton';
 
-function SpaCard({ images }) {
+function SpaCard({ images,displayButton }) {
   const navigate = useNavigate();
   const cardRefs = useRef([]); // Create refs for all cards
 
@@ -18,6 +18,8 @@ function SpaCard({ images }) {
   const handleServiceNavigation = (serviceName) => {
     if (serviceName === 'Tinting Service') {
       navigate('/tint');
+    }else if(serviceName === 'Threading'){
+      navigate('threading')
     }
   };
 
@@ -54,7 +56,11 @@ function SpaCard({ images }) {
         <h3>{image.alt}</h3>
         <p>{image.description}</p>
         <p className="price">${image.price}</p>
-        <BookButton onClick={(event) => handleBooking(image.alt, event)} />
+        {
+          displayButton ?
+            <BookButton onClick={(event) => handleBooking(image.alt, event)} label='Schedule' /> 
+          : ""
+        }
       </div>
     </div>
   ));

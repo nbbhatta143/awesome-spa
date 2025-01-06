@@ -2,7 +2,7 @@
 import React from 'react';
 import '../style/BookButton.css'; // Import the styling for the button
 
-const BookButton = ({ onClick, label = "Schedule" }) => {
+const BookButton = ({ onClick, label = "Button" }) => {
   return (
     <button className="book-button" onClick={onClick}>
       {label}

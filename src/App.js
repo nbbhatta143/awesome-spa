@@ -7,23 +7,19 @@ import BookingPage from './component/BookingPage';
 
 import OIP from './images/OIP.jpg';
 import Waxing from './images/waxing.png';
-import Threading from './images/threading.jpg'
+import Threadings from './images/threading.jpg'
+
 import Homepage from './component/HomePage'
 import Tint from './component/Tint';
 import relaxing from "./images/sddefault.jpg"
 import skiltreatment from "./images/the-dermalogica-skin-treatment.png"
 import hot_stone_massage from "./images/1296x728_HEADER_benefits-of-hot-stone-massage.jpg"
+import Threading from './component/Threading';
 
   // Spa services data
   const images = [
     {
-      src: OIP,
-      alt: 'Tinting Service',
-      description: 'Nail care services for a perfect look.',
-      price: '30'
-    },
-    {
-      src: Threading,
+      src: Threadings,
       alt: "Threading",
       description: 'Relaxing facial treatments for a rejuvenated skin.',
       price: '30'
@@ -52,6 +48,12 @@ import hot_stone_massage from "./images/1296x728_HEADER_benefits-of-hot-stone-ma
         description: 'Relieve tension with our hot stone therapy session.',
         price: 150,
       },
+      {
+        src: OIP,
+        alt: 'Tinting Service',
+        description: 'Nail care services for a perfect look.',
+        price: '30'
+      }
   ];
 
 function App() {
@@ -63,9 +65,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage images={images} />} />
           <Route path="/tint" element={<Tint />} />
-          <Route path="/facial" element={<SpaCard images={images}/>} />
-          <Route path="/wax" element={<SpaCard images={images}/>} />
-          <Route path="/spaservices" element={<SpaCard images={images} />} />
+          <Route path="/threading" element={<Threading />} />
+          <Route path="/facial" element={<SpaCard images={images} displayButton={false}/>} />
+          <Route path="/wax" element={<SpaCard images={images} displayButton={false}/>} />
+          <Route path="/spaservices" element={<SpaCard images={images} displayButton={false} />} />
           <Route path="/booking/:serviceName" element={<BookingPage />} />
         </Routes>
       </Router>

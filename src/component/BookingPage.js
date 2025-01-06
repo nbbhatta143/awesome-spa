@@ -1,11 +1,13 @@
 // src/components/BookingPage.js
 import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams,useNavigate } from 'react-router-dom';
 
 import emailjs from 'emailjs-com'; // Import EmailJS
+import BookButton from './BookButton';
 import '../style/BookingPage.css'
 
 const BookingPage = () => {
+   const navigate = useNavigate();
   // State to hold form data
   const [formData, setFormData] = useState({
     firstName: '',
@@ -59,6 +61,9 @@ const BookingPage = () => {
       time: '',
     });
   };
+  const handleCancel =()=>{
+    navigate(-1)
+  }
 
   return (
     <div className="booking-page">
@@ -148,9 +153,16 @@ const BookingPage = () => {
           />
         </div>
 
-        <button type="submit" className="submit-button">
+        {/* <button type="submit" className="submit-button">
           Submit Booking
-        </button>
+        </button> */}
+        
+        <div className="button-group">
+          <BookButton type="submit" label='Submit' displayButton={true} /> 
+          <BookButton onClick={handleCancel} label='Cancel' displayButton={true}/> 
+        </div>  
+
+
       </form>
     </div>
   );

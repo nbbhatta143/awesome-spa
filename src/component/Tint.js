@@ -1,6 +1,7 @@
 // src/Tint.js
 import React from 'react';
 import SpaCard from './SpaCard'; // Import the SpaCard component
+
 import '../style/Tint.css'; // Optional: Create and link styles specific to Tint view
 // import BackToHomeButton from './BackToHomeButton'; // Import the BackToHomeButton component
 
@@ -31,13 +32,13 @@ const spaServices = [
 ];
 
 function Tint() {
+ 
   return (
     <div className="tint-container">
-      <h1 className="tint-header">Our Spa Services</h1>
+      <h1 className="tint-header">Tinting Services</h1>
       <div className="spa-card-list">
-        <SpaCard images={spaServices} />
+        <SpaCard images={spaServices}displayButton={true} />
       </div>
-      {/* <BackToHomeButton />  */}
     </div>
   );
 }
