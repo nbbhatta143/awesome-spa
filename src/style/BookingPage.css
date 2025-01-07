@@ -1,11 +1,12 @@
 /* src/style/BookingPage.css */
 .booking-page {
-  padding: 40px;
+  padding: 25px;
   max-width: 600px;
   margin: 0 auto;
   background-color: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
 }
 
 .booking-page h1 {
