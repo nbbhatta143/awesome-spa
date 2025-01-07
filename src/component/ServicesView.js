@@ -5,9 +5,10 @@ import SpaCard from './SpaCard';
 
 
 function ServicesView({images, servicesName}) {
+  const isLogoVisible = true
   return (
-    <div className="Services-container">
-      <h1 className="Services-header">{servicesName}</h1>
+    <div className="service-container">
+      <h4 className="Services-header">{servicesName}</h4>
       <div className="spa-card-list">
         <SpaCard images={images}displayButton={true} />
       </div>

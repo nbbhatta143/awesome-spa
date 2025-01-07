@@ -6,7 +6,7 @@ function Homepage({images}){
   return (
     <header className="App-header">
       <Carousel images={images} />      
-      <h2>Our Services</h2>
+      <h3>Our Services</h3>
       <div className="card-container">
         <SpaCard images={images} />
       </div>

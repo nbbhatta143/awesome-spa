@@ -5,7 +5,6 @@ import '../style/App.css'; // We'll use this for custom styles
 
 
 function Navbar({title, isFooter}) {
-
   const [isOpen, setIsOpen] = useState(false);
 
   // Toggle menu open/close
@@ -16,15 +15,18 @@ function Navbar({title, isFooter}) {
   const closeMenu = () => {
     setIsOpen(false);
   };
+
+ 
   return (
     <div className="App">
       <header>
         <nav className="navbar">
           <div className="logo">
             <ul> 
-              <li><a href='#/'><h3>{title}</h3></a></li>
+              <li><a href='#/'><h2>{title}</h2></a></li>
             </ul>
           </div>
+          
           <div className={!isFooter? 'footer': `menu ${isOpen ? 'open' : ''}`}>
             <ul>
                <li><a href="#/" onClick={closeMenu}>Home</a></li>
