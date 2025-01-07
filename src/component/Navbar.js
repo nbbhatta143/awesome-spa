@@ -30,10 +30,10 @@ function Navbar({title, isFooter}) {
           <div className={!isFooter? 'footer': `menu ${isOpen ? 'open' : ''}`}>
             <ul>
                <li><a href="#/" onClick={closeMenu}>Home</a></li>
-              <li><a href="#tint" onClick={closeMenu}>Tint</a></li>
+              <li><a href="#tinting" onClick={closeMenu}>Tint</a></li>
               <li><a href="#facial" onClick={closeMenu}>Threading</a></li>
-              <li><a href="#wax" onClick={closeMenu}>Wax</a></li>
-              <li><a href="#henna" onClick={closeMenu}>Henna Tatto</a></li>
+              <li><a href="#waxing" onClick={closeMenu}>Wax</a></li>
+              <li><a href="#henna" onClick={closeMenu}>Henna</a></li>
               <li><a href="#facial" onClick={closeMenu}>Facial</a></li>
              
             </ul>

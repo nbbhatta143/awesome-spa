@@ -4,6 +4,8 @@
   font-family: Arial, sans-serif;
   background-color: #333;
   margin-top: 2px;
+  max-width: 80%;
+  margin: 0 auto;
 }
 html{
   background-color: #333;
@@ -12,9 +14,9 @@ html{
 header {
   background-color: #333;
   color: white;
-  padding: 10px 5px;
+  /* padding: 10px 5px; */
   position: relative;
-  margin: 5px 5px 1px 2px;
+  /* margin: 5px 5px 1px 2px; */
   text-align: center;
 
 }
@@ -22,28 +24,21 @@ header {
   margin: 0px;
   padding: 2px;
 }
+
 .navbar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /* justify-content: space-between; */
+  /* align-items: center; */
   position: relative;
   width: 100%;
-  /* padding: 10px 0; */
-
+  left: -12%;
+  justify-content: flex-end;
+  align-items: flex-start;
+  /* padding-bottom: 2%; */
+  flex-direction: row-reverse;
 }
 
-/* Positioning for the hamburger menu and logo */
-.navbar .logo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%); /* Centers the logo */
-}
 
-.navbar {
-  margin: 0;
-  /* font-size: 24px; */
-  /* padding-left: 75px; */
-}
 
 /* Navbar menu (desktop) */
 .menu ul {
@@ -66,7 +61,7 @@ header {
 .logo ul {
   list-style: none; /* Removes bullet points */
   text-align: center;
-  padding: 1px;
+  padding-top: 10px;
 }
 
 
@@ -100,6 +95,7 @@ header {
   z-index: 2;
 }
 .Services-container {
+  display: flex;
   padding: 5px;
   background-color: #333;
   min-height: 100vh; /* Full viewport height */
@@ -110,7 +106,7 @@ header {
   position: relative;
   color: white;
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   justify-content: flex-start;
   align-items: center;
   padding-left: 5px;
@@ -125,13 +121,20 @@ header {
 /* Mobile-specific styles (screens less than 768px wide) */
 @media (max-width: 1165px) {
   /* Hide the regular menu */
+  .App {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+ 
   .menu {
     display: block;
     position: fixed;
     top: 0;
     left: -250px; /* Start off-screen to the left */
     bottom: 0;
-    width: 30%; /* Menu width */
+    /* width: 30%; Menu width */
     background-color: #333;
     padding: 10px;
     transition: left 0.3s ease-in-out; /* Apply smooth sliding transition */
@@ -148,7 +151,31 @@ header {
   .hamburger {
     display: flex;
   }
-
+  .navbar {
+    left: 0%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+  }
+  /* .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    left: 0%;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 2%;
+    align-items: center;
+    padding: 2%;
+  } */
+  /* Positioning for the hamburger menu and logo */
+  .navbar .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Centers the logo */
+  }
   /* When the menu is open, move it into view */
   .menu.open {
     left: 0; /* Slide the menu to the visible position */
@@ -202,5 +229,17 @@ header {
   .footer ul li a:hover {
     text-decoration: underline;
   }
+  header {
+    background-color: #333;
+    color: white;
+    padding: 15px 5px;
+    position: relative;
   
+  }
+  .footer header {
+    padding:0%
+  }
+  .footer-nav{
+    padding: 0%;
+  }
 }

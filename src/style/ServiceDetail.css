@@ -1,0 +1,82 @@
+/* Ensure body and html are properly styled */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  /* overflow: hidden; Prevent scrolling */
+  box-sizing: border-box;
+  color: whitesmoke;
+}
+
+/* Container for the entire detail view */
+.service-detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background: linear-gradient(to bottom, #f8f9fa, #e9ecef); /* Subtle gradient background */
+  padding: 0 20px; /* Add some padding for smaller screens */
+  box-sizing: border-box;
+}
+
+/* Card-style detail view */
+.service-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  border-radius: 15px; /* Rounded corners */
+  padding: 20px;
+  width: 90%; /* Responsive width */
+  max-width: 500px; /* Slightly smaller for better fit */
+  max-height: 90%; /* Prevent overflowing on larger screens */
+  text-align: center; /* Center-align text */
+  overflow: hidden; /* Ensure content doesn't spill out */
+}
+
+/* Styling for the service image */
+.service-image img {
+  width: 100%;
+  height: auto;
+  max-height: 50%; /* Ensure the image doesn't dominate the card */
+  border-radius: 10px; /* Rounded image corners */
+  margin-bottom: 20px; /* Space below image */
+}
+
+/* Information section */
+.service-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* Space between elements */
+}
+
+/* Title styling */
+.service-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #343a40;
+  margin: 0;
+  text-overflow: ellipsis; /* Handle long text gracefully */
+  white-space: pre-wrap;  
+}
+
+/* Description styling */
+.service-description {
+  font-size: 1rem;
+  color: #495057;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Price styling */
+.service-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #28a745;
+  margin: 0;
+}

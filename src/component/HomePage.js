@@ -4,13 +4,13 @@ import SpaCard from './SpaCard';
 
 function Homepage({images}){
   return (
-    <header className="App-header">
+    <body className="App-header">
       <Carousel images={images} />      
       <h3>Our Services</h3>
       <div className="card-container">
         <SpaCard images={images} />
       </div>
-    </header>
+    </body>
   );
 };
 export default Homepage;

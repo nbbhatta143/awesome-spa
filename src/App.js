@@ -4,6 +4,7 @@ import Navbar from './component/Navbar';
 // import SpaCard from './component/SpaCard';
 import Footer from './component/Footer';
 import BookingPage from './component/BookingPage';
+import ServiceDetail from './component/ServiceDetail';
 
 import OIP from './images/OIP.jpg';
 import Waxing from './images/waxing.png';
@@ -116,11 +117,12 @@ function App() {
           <Route path='/facial' element={<ServicesView images={threadingServices} servicesName="Facial Services"/>}/>
           <Route path='/waxing' element={<ServicesView images={threadingServices} servicesName="Waxing Services"/>}/>
           <Route path="/henna" element={<ServicesView images={threadingServices} servicesName="Henna Tatto"/>}/>
-          {/* <Route path="/tint" element={<Tint />} /> */}
-          {/* <Route path="/threading" element={<Threading />} /> */}
-          {/* <Route path="/facial" element={<SpaCard images={tintServices} displayButton={false}/>} /> */}
-          {/* <Route path="/wax" element={<SpaCard images={images} displayButton={false}/>} /> */}
-          {/* <Route path="/spaservices" element={<SpaCard images={images} displayButton={false} />} /> */}
+          {/*<Route path="/tinting-services" element={<ServicesView images={tintServices} servicesName="Tinting Services" />} />
+          <Route path="/threading-services" element={<ServicesView images={threadingServices} servicesName="Threading Services" />} />
+          <Route path="/facial-services" element={<ServicesView images={threadingServices} servicesName="Facial Services" />} />
+          <Route path="/waxing-services" element={<ServicesView images={threadingServices} servicesName="Waxing Services" />} />
+          <Route path="/henna-tattoo" element={<ServicesView images={threadingServices} servicesName="Henna Tattoo" />} /> */}
+          <Route path="/details/:serviceName" element={<ServiceDetail />} />
           <Route path="/booking/:serviceName" element={<BookingPage />} />
         </Routes>
       </Router>
