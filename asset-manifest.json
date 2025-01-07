@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/awesome-spa/static/css/main.c6ad6935.css",
-    "main.js": "/awesome-spa/static/js/main.868f525e.js",
+    "main.js": "/awesome-spa/static/js/main.708c269c.js",
     "static/js/488.bd155bf8.chunk.js": "/awesome-spa/static/js/488.bd155bf8.chunk.js",
     "static/media/threading_1.jpg": "/awesome-spa/static/media/threading_1.b4e988c4a82ee3825483.jpg",
     "static/media/threading.jpg": "/awesome-spa/static/media/threading.96370b118310b9366d17.jpg",
@@ -10,15 +10,16 @@
     "static/media/full_face.jpg": "/awesome-spa/static/media/full_face.03e6e861ecfc1e1bfe34.jpg",
     "static/media/1296x728_HEADER_benefits-of-hot-stone-massage.jpg": "/awesome-spa/static/media/1296x728_HEADER_benefits-of-hot-stone-massage.efb6cbf9c9e1cbb5d297.jpg",
     "static/media/sddefault.jpg": "/awesome-spa/static/media/sddefault.0f8e653a2916fee68f61.jpg",
+    "static/media/henna.jpg": "/awesome-spa/static/media/henna.0f44047b71af48292bf1.jpg",
     "static/media/OIP.jpg": "/awesome-spa/static/media/OIP.8448b51ab82f6ca3e56b.jpg",
     "static/media/chin_threading.jpg": "/awesome-spa/static/media/chin_threading.4e52e7865b049d9ead3d.jpg",
     "index.html": "/awesome-spa/index.html",
     "main.c6ad6935.css.map": "/awesome-spa/static/css/main.c6ad6935.css.map",
-    "main.868f525e.js.map": "/awesome-spa/static/js/main.868f525e.js.map",
+    "main.708c269c.js.map": "/awesome-spa/static/js/main.708c269c.js.map",
     "488.bd155bf8.chunk.js.map": "/awesome-spa/static/js/488.bd155bf8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c6ad6935.css",
-    "static/js/main.868f525e.js"
+    "static/js/main.708c269c.js"
   ]
 }
