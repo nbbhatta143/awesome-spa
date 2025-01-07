@@ -19,7 +19,7 @@ function SpaCard({ images,displayButton }) {
     if (serviceName === 'Tinting Service') {
       navigate('/tint');
     }else if(serviceName === 'Threading'){
-      navigate('threading')
+      navigate('/threading')
     }
   };
 
@@ -55,10 +55,14 @@ function SpaCard({ images,displayButton }) {
       <div className="spa-card-content">
         <h3>{image.alt}</h3>
         <p>{image.description}</p>
-        <p className="price">${image.price}</p>
+        
         {
           displayButton ?
+          <> 
+            <p className="price">${image.price}</p>
             <BookButton onClick={(event) => handleBooking(image.alt, event)} label='Schedule' /> 
+          </>
+           
           : ""
         }
       </div>

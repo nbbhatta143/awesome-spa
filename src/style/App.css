@@ -17,7 +17,10 @@ header {
   text-align: center;
 
 }
-
+.App-header h1, .logo h1{
+  margin: 0px;
+  padding: 2px;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -32,13 +35,13 @@ header {
 .navbar .logo {
   position: absolute;
   left: 50%;
-  transform: translateX(-75%); /* Centers the logo */
+  transform: translateX(-65%); /* Centers the logo */
 }
 
 .navbar {
   margin: 0;
   font-size: 24px;
-  padding-left: 75px;
+  /* padding-left: 75px; */
 }
 
 /* Navbar menu (desktop) */
@@ -94,6 +97,24 @@ header {
   margin: 4px 0;  /* Add space between bars */
   background-color: white;
   z-index: 2;
+}
+.Services-container {
+  padding: 5px;
+  background-color: #f9f9f9;
+  min-height: 100vh; /* Full viewport height */
+}
+
+.Services-header {
+  font-size: 25px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.spa-card-list {
+  display: flex;
+  flex-direction: column; /* Arrange cards in a vertical list */
+  gap: 10px; /* Space between cards */
 }
 
 /* Mobile-specific styles (screens less than 768px wide) */
@@ -166,7 +187,7 @@ header {
   }
   
   .footer ul li a {
-    font-size: 15px;
+    /* font-size: 15px; */
     color: white;
     text-decoration: none;
   }

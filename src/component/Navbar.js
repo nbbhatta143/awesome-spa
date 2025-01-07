@@ -22,17 +22,18 @@ function Navbar({title, isFooter}) {
         <nav className="navbar">
           <div className="logo">
             <ul> 
-              <li><a href='#/'>{title}</a></li>
+              <li><a href='#/'><h3>{title}</h3></a></li>
             </ul>
           </div>
           <div className={!isFooter? 'footer': `menu ${isOpen ? 'open' : ''}`}>
             <ul>
+               <li><a href="#/" onClick={closeMenu}>Home</a></li>
               <li><a href="#tint" onClick={closeMenu}>Tint</a></li>
               <li><a href="#facial" onClick={closeMenu}>Threading</a></li>
               <li><a href="#wax" onClick={closeMenu}>Wax</a></li>
               <li><a href="#henna" onClick={closeMenu}>Henna Tatto</a></li>
               <li><a href="#facial" onClick={closeMenu}>Facial</a></li>
-              <li><a href="#/" onClick={closeMenu}>Home</a></li>
+             
             </ul>
           </div>
           {isFooter && (

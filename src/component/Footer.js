@@ -11,7 +11,7 @@ const Footer = () => {
           <Nav isFooter={false} /> {/* Pass a prop to disable hamburger menu in the footer */}
         </div>
         <div className="footer-copyright">
-          <p>&copy; 2024 Spa Salon. All rights reserved.</p>
+          <p>&copy; 2024 Divine Spa <br/>All rights reserved to Narayan Bhattarai.</p>
         </div>
       </div>
     </footer>
