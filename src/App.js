@@ -9,6 +9,7 @@ import OIP from './images/OIP.jpg';
 import Waxing from './images/waxing.png';
 import Threadings from './images/threading.jpg'
 import skiltreatment from "./images/the-dermalogica-skin-treatment.png"
+import Henna from "./images/henna.jpg"
 
 import Homepage from './component/HomePage'
 // import Tint from './component/Tint';
@@ -47,7 +48,14 @@ import fullface from "./images/full_face.jpg"
         alt: 'Tinting',
         description: 'Nail care services for a perfect look.',
         price: '30'
+      },
+      {
+        src: Henna,
+        alt: 'Henna',
+        description: 'Henna services for a perfect look.',
+        price: '30'
       }
+
   ];
 
 
@@ -103,10 +111,10 @@ function App() {
         <Navbar title={"Divine Spa"} isFooter={true}/>
         <Routes>
           <Route path="/" element={<Homepage images={ServicesNav} />} />
-          <Route path='/tint' element={<ServicesView images={tintServices} servicesName="Tinting Services"/>}/>
+          <Route path='/tinting' element={<ServicesView images={tintServices} servicesName="Tinting Services"/>}/>
           <Route path='/threading' element={<ServicesView images={threadingServices} servicesName="Threading Services"/>}/>
           <Route path='/facial' element={<ServicesView images={threadingServices} servicesName="Facial Services"/>}/>
-          <Route path='/wax' element={<ServicesView images={threadingServices} servicesName="Waxing Services"/>}/>
+          <Route path='/waxing' element={<ServicesView images={threadingServices} servicesName="Waxing Services"/>}/>
           <Route path="/henna" element={<ServicesView images={threadingServices} servicesName="Henna Tatto"/>}/>
           {/* <Route path="/tint" element={<Tint />} /> */}
           {/* <Route path="/threading" element={<Threading />} /> */}

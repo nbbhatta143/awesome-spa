@@ -5,7 +5,6 @@ import SpaCard from './SpaCard';
 
 
 function ServicesView({images, servicesName}) {
-  const isLogoVisible = true
   return (
     <div className="service-container">
       <h4 className="Services-header">{servicesName}</h4>

@@ -16,11 +16,22 @@ function SpaCard({ images,displayButton }) {
 
   // Handle card navigation
   const handleServiceNavigation = (serviceName) => {
-    if (serviceName === 'Tinting Service') {
-      navigate('/tint');
-    }else if(serviceName === 'Threading'){
-      navigate('/threading')
-    }
+    const name = serviceName.toLowerCase();
+    // if (serviceName === 'Tinting Services') {
+    //   navigate('/tint');
+    // }else if(serviceName === 'Threading Services'){
+    //   navigate('/threading')
+    // }
+    // else if(serviceName === 'Facial Services'){
+    //   navigate('/facial')
+    // }
+    // else if(serviceName === 'Waxing Services'){
+    //   navigate('/waxing')
+    // }
+    // else if(serviceName === 'Henna Tatto'){
+    //   navigate('/henna')
+    // }
+    navigate(`/${name}`);
   };
 
   // Add scroll effect using IntersectionObserver
