@@ -136,6 +136,7 @@ header {
     padding: 10px;
     transition: left 0.3s ease-in-out; /* Apply smooth sliding transition */
     z-index: 2;
+    text-align: left;
   }
   .carousel-image img {
     width: 100%;
