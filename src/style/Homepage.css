@@ -1,0 +1,102 @@
+.App-header {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.office-hours-container {
+  margin: 20px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+}
+
+.office-hours-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.office-hour-item {
+  font-size: 1rem;
+  color: #343a40;
+  margin: 5px 0;
+}
+
+.booking-section {
+  margin: 20px auto;
+  padding: 15px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+}
+
+.date-time-display {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.time-slot {
+  font-size: 1rem;
+  color: #007bff;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.time-slot.selected {
+  font-weight: bold;
+  color: #28a745;
+}
+
+.choose-services-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: #ffffff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.choose-services-btn:hover {
+  background: #0056b3;
+}
+
+.services-section {
+  margin: 20px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.choose-services-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: #ffffff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition-property: inherit;
+  transition-duration: 0.3s;
+  transition-timing-function: ease; /* Optional: Specify easing */
+}
+
+.choose-services-btn:hover {
+  background: #0056b3;
+}

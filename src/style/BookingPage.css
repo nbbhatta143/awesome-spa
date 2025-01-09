@@ -59,3 +59,90 @@
 .submit-button:hover {
   background-color: #0056b3;
 }
+/* BookingPage.css */
+.booking-page {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.selected-info {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.selected-info p {
+  margin: 5px 0;
+  font-size: 1.1rem;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button-group button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-group button:hover {
+  background-color: #0056b3;
+}
+
+.confirmation-view {
+  text-align: center;
+  padding: 20px;
+  background-color: #e9ecef;
+  border-radius: 10px;
+}
+
+.confirmation-view h2 {
+  font-size: 1.5rem;
+  color: #28a745;
+}
+
+.confirmation-view p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.confirmation-view button {
+  background-color: #28a745;
+  border-radius: 5px;
+}
+
+.confirmation-view button:hover {
+  background-color: #218838;
+}
