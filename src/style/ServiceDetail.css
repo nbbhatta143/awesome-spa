@@ -76,21 +76,29 @@
     padding: 4% 20px;
   }
 }
-
-/* ServiceDetail.css */
+/* Modal Overlay */
 .modal-overlay {
   position: fixed;
-  top: 0;
+  top: -100%;  /* Initially, the modal is off-screen */
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);  /* Background overlay */
+  background-color: rgba(0, 0, 0, 0.5); /* Background overlay */
   display: flex;
   justify-content: center;
   align-items: flex-start;
   z-index: 1000;
+  transition: top 0.6s ease-in-out;  /* Smooth transition for sliding */
+  visibility: hidden;  /* Initially hidden */
 }
 
+/* When showDetail is true, slide down the modal */
+.modal-overlay.show {
+  top: 0%;  /* Slide the modal to the top */
+  visibility: visible;  /* Make the modal visible */
+}
+
+/* Modal Content Styling */
 .modal-content {
   background-color: #ffffff7a;
   padding: 20px;
@@ -100,33 +108,4 @@
   width: 100%;
   max-height: 80%;
   overflow-y: auto;
-}
-
-.service-detail-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.service-detail {
-  display: flex;
-  justify-content: space-between;
-}
-
-.service-title {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.service-description {
-  margin-bottom: 15px;
-}
-
-.service-price {
-  font-weight: bold;
-}
-
-.service-image img {
-  max-width: 100%;
-  border-radius: 5px;
 }

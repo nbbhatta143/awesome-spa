@@ -33,7 +33,7 @@ function ServicesView({ images, servicesName }) {
       ))}
       {/* If modal is active, show the ServiceDetail in a modal */}
       {showDetail && selectedService && (
-        <div className="modal-overlay" onClick={handleClosePopup}>
+        <div className={`modal-overlay ${showDetail ? 'show' : ''}`} onClick={handleClosePopup}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <ServiceDetail 
               service={selectedService} 
