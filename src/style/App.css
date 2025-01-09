@@ -124,8 +124,8 @@ header {
     font-family: Arial, sans-serif;
     max-width: 100%;
     margin: 0 auto;
-    background: linear-gradient(to bottom, #f8f9fa, #e9ecef); /* Subtle gradient background */
-
+    background: linear-gradient(to bottom, #ffffff, #b7b6b6ed); /* Subtle gradient background */
+    padding: 0px 1% 0px 1%;
   }
  
   .menu {
@@ -152,7 +152,7 @@ header {
     left: 0%;
     justify-content: space-between;
     align-items: center;
-    padding: 5% 3% 4% 0%;
+    padding: 5% 3% 2% 0%;
   }
   .navbar .logo {
     position: absolute;
