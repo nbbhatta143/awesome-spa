@@ -117,11 +117,6 @@ function App() {
           <Route path='/facial' element={<ServicesView images={threadingServices} servicesName="Facial Services"/>}/>
           <Route path='/waxing' element={<ServicesView images={threadingServices} servicesName="Waxing Services"/>}/>
           <Route path="/henna" element={<ServicesView images={threadingServices} servicesName="Henna Tatto"/>}/>
-          {/*<Route path="/tinting-services" element={<ServicesView images={tintServices} servicesName="Tinting Services" />} />
-          <Route path="/threading-services" element={<ServicesView images={threadingServices} servicesName="Threading Services" />} />
-          <Route path="/facial-services" element={<ServicesView images={threadingServices} servicesName="Facial Services" />} />
-          <Route path="/waxing-services" element={<ServicesView images={threadingServices} servicesName="Waxing Services" />} />
-          <Route path="/henna-tattoo" element={<ServicesView images={threadingServices} servicesName="Henna Tattoo" />} /> */}
           <Route path="/details/:serviceName" element={<ServiceDetail />} />
           <Route path="/booking/:serviceName" element={<BookingPage />} />
         </Routes>

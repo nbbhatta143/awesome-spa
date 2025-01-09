@@ -17,20 +17,6 @@ function SpaCard({ images, displayButton, placeholder,displayDetail }) {
   // Handle card navigation
   const handleServiceNavigation = (serviceName) => {
     const name = serviceName.toLowerCase();
-    // if (serviceName === 'Tinting Services') {
-    //   navigate('/tint');
-    // }else if(serviceName === 'Threading Services'){
-    //   navigate('/threading')
-    // }
-    // else if(serviceName === 'Facial Services'){
-    //   navigate('/facial')
-    // }
-    // else if(serviceName === 'Waxing Services'){
-    //   navigate('/waxing')
-    // }
-    // else if(serviceName === 'Henna Tatto'){
-    //   navigate('/henna')
-    // }
     navigate(`/${name}`);
   };
 
@@ -58,7 +44,7 @@ function SpaCard({ images, displayButton, placeholder,displayDetail }) {
       key={index}
       className={`spa-card ${index % 2 === 1 || placeholder % 2 === 1 ? 'reverse' : ''}`}
       ref={(el) => (cardRefs.current[index] = el)} // Assign ref to each card
-      onClick={() => !displayDetail?handleServiceNavigation(image.alt):""}
+      onClick={() => !displayDetail? handleServiceNavigation(image.alt):""}
     >
       <div className="spa-card-image">
         <img src={image.src} alt={image.alt} />

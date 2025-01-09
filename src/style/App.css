@@ -136,7 +136,7 @@ header {
     bottom: 0;
     padding: 10px;
     transition: left 0.3s ease-in-out; /* Apply smooth sliding transition */
-    z-index: 2;
+    z-index: 10;
     text-align: left;
   }
   .carousel-image img {
@@ -164,6 +164,7 @@ header {
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
     top: 5%;
+    transition: left 0.3s ease-in-out; /* Apply smooth sliding transition */
   }
 
   .menu ul {
