@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-between; /* Ensure even spacing */
   margin: 0px;
-  padding: 1px;
+  padding: 0px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

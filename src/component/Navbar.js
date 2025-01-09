@@ -18,38 +18,32 @@ function Navbar({title, isFooter}) {
 
  
   return (
-    <div className="App">
-      <header>
-        <nav className="navbar">
-          <div className="logo">
-            <ul> 
-              <li><a href='#/'><h2>{title}</h2></a></li>
-            </ul>
-          </div>
-          
-          <div className={!isFooter? 'footer': `menu ${isOpen ? 'open' : ''}`}>
-            <ul>
-               <li><a href="#/" onClick={closeMenu}>Home</a></li>
-              <li><a href="#tinting" onClick={closeMenu}>Tint</a></li>
-              <li><a href="#facial" onClick={closeMenu}>Threading</a></li>
-              <li><a href="#waxing" onClick={closeMenu}>Wax</a></li>
-              <li><a href="#henna" onClick={closeMenu}>Henna</a></li>
-              <li><a href="#facial" onClick={closeMenu}>Facial</a></li>
-             
-            </ul>
-          </div>
-          {isFooter && (
-            <div className="hamburger" onClick={toggleMenu}>
-              <div className="bar"></div>
-              <div className="bar"></div>
-              <div className="bar"></div>
-            </div>
-          )}
+    <nav className="navbar">
+      <div className="logo">
+        <ul> 
+          <li><a href='#/'><h2>{title}</h2></a></li>
+        </ul>
+      </div>
+      
+      <div className={!isFooter? 'footer': `menu ${isOpen ? 'open' : ''}`}>
+        <ul>
+          <li><a href="#/" onClick={closeMenu}>Home</a></li>
+          <li><a href="#facial" onClick={closeMenu}>Facial</a></li>
+          <li><a href="#waxing" onClick={closeMenu}>Wax</a></li>
+          <li><a href="#henna" onClick={closeMenu}>Henna</a></li>
+          <li><a href="#threading" onClick={closeMenu}>Threading</a></li>
+          <li><a href="#tinting" onClick={closeMenu}>Tint</a></li>
+        </ul>
+      </div>
+      {isFooter && (
+        <div className="hamburger" onClick={toggleMenu}>
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
+        </div>
+      )}
 
-        </nav>
-      </header>
-
-    </div>
+    </nav>
   );
 }
 

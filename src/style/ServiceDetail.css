@@ -1,25 +1,16 @@
-/* Ensure body and html are properly styled */
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  /* overflow: hidden; Prevent scrolling */
-  box-sizing: border-box;
-  color: whitesmoke;
-}
 
-/* Container for the entire detail view */
 .service-detail-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full viewport height */
-  background: linear-gradient(to bottom, #f8f9fa, #e9ecef); /* Subtle gradient background */
+
+  /* background: linear-gradient(to bottom, #f8f9fa, #e9ecef); Subtle gradient background */
   padding: 0 20px; /* Add some padding for smaller screens */
   box-sizing: border-box;
 }
-
+.service-container .spa-card-image{
+  flex:"important";
+}
 /* Card-style detail view */
 .service-detail {
   display: flex;
@@ -79,4 +70,9 @@ html, body {
   font-weight: bold;
   color: #28a745;
   margin: 0;
+}
+@media (max-width: 1165px) {
+  .service-detail-container {
+    padding: 4% 20px;
+  }
 }
