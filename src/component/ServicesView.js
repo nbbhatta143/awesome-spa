@@ -16,9 +16,11 @@ function ServicesView({ images, servicesName }) {
 
   // Close the modal
   const handleClosePopup = () => {
-    setShowDetail(false);  // Hide the modal
-    setSelectedService(null);  // Clear the selected service
-    setTimeout(()=> setSlideIn(false), 50)
+    setSlideIn(false);  // Slide out first
+    setTimeout(() => {
+      setShowDetail(false);  
+      setSelectedService(null);  
+    }, 500); 
   };
 
   return (
@@ -37,7 +39,7 @@ function ServicesView({ images, servicesName }) {
       {/* If modal is active, show the ServiceDetail in a modal */}
       {showDetail && selectedService && (
         <div className={`modal-overlay ${showDetail ? 'show' : ''}`} onClick={handleClosePopup}>
-          <div className={`modal-content ${slideIn ? 'slide-in' : ''}`}>
+          <div className={`modal-content ${slideIn ? 'slide-in' : 'slide-out'}`}>
             <div   onClick={(e) => e.stopPropagation()}> 
             <ServiceDetail 
               service={selectedService} 
