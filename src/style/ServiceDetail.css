@@ -5,7 +5,7 @@
   align-items: center;
 
   /* background: linear-gradient(to bottom, #f8f9fa, #e9ecef); Subtle gradient background */
-  padding: 0 20px; /* Add some padding for smaller screens */
+  padding: 1% 1%;
   box-sizing: border-box;
 }
 .service-container .spa-card-image{
@@ -17,13 +17,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #ffffff;
+  background-color: #efe3ffe0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
   border-radius: 15px; /* Rounded corners */
-  padding: 20px;
-  width: 90%; /* Responsive width */
-  max-width: 500px; /* Slightly smaller for better fit */
-  max-height: 90%; /* Prevent overflowing on larger screens */
+  max-width: 100%;
+  max-height: 100%;
   text-align: center; /* Center-align text */
   overflow: hidden; /* Ensure content doesn't spill out */
 }
@@ -73,13 +71,14 @@
 }
 @media (max-width: 1165px) {
   .service-detail-container {
-    padding: 4% 20px;
+    padding: 1% 1%;
   }
 }
 /* Modal Overlay */
+/* Modal Overlay */
 .modal-overlay {
   position: fixed;
-  top: -100%;  /* Initially, the modal is off-screen */
+  top: -10%;  /* Initially off-screen */
   left: 0;
   right: 0;
   bottom: 0;
@@ -88,24 +87,23 @@
   justify-content: center;
   align-items: flex-start;
   z-index: 1000;
-  transition: top 0.6s ease-in-out;  /* Smooth transition for sliding */
-  visibility: hidden;  /* Initially hidden */
+  transition: top 0.9s ease-in-out; /* Smooth transition for the sliding effect */
+  visibility: hidden;
 }
 
-/* When showDetail is true, slide down the modal */
+/* When showDetail is true, the modal slides in */
 .modal-overlay.show {
-  top: 0%;  /* Slide the modal to the top */
-  visibility: visible;  /* Make the modal visible */
+  top: 0%;  /* Move the modal into view */
+  visibility: visible;
+  transition: top .10s ease-in-out; /* Smooth transition for the sliding effect */
 }
 
 /* Modal Content Styling */
 .modal-content {
-  background-color: #ffffff7a;
-  padding: 20px;
+  /* background-color: #ffffff7a; */
   border-radius: 10px;
   position: relative;
-  max-width: 600px;
-  width: 100%;
-  max-height: 80%;
+  max-width: 100%;
+  max-height: 100%;
   overflow-y: auto;
 }
