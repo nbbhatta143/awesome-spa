@@ -62,6 +62,9 @@ function SpaCard({ images, displayButton, placeholder,displayDetail }) {
            
           : ""
         }
+        {
+          displayDetail? <BookButton label='View More'/>:""
+        }
       </div>
     </div>
   ));
