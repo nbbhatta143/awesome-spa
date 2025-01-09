@@ -5,17 +5,20 @@ import ServiceDetail from './ServiceDetail';  // Import ServiceDetail
 function ServicesView({ images, servicesName }) {
   const [selectedService, setSelectedService] = useState(null);  // Stores the selected service
   const [showDetail, setShowDetail] = useState(false);  // Controls modal visibility
+  const [slideIn, setSlideIn] = useState(false); // State to control the slide-in effect
 
   // Handle card click to display the service detail modal
   const handleServiceNavigation = (service) => {
     setSelectedService(service);  // Set the selected service data
     setShowDetail(true);  // Show the modal
+    setTimeout(()=> setSlideIn(true), 50)
   };
 
   // Close the modal
   const handleClosePopup = () => {
     setShowDetail(false);  // Hide the modal
     setSelectedService(null);  // Clear the selected service
+    setTimeout(()=> setSlideIn(false), 50)
   };
 
   return (
@@ -34,11 +37,14 @@ function ServicesView({ images, servicesName }) {
       {/* If modal is active, show the ServiceDetail in a modal */}
       {showDetail && selectedService && (
         <div className={`modal-overlay ${showDetail ? 'show' : ''}`} onClick={handleClosePopup}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+          <div className={`modal-content ${slideIn ? 'slide-in' : ''}`}>
+            <div   onClick={(e) => e.stopPropagation()}> 
             <ServiceDetail 
               service={selectedService} 
-              handleClose={handleClosePopup} 
+              handleClose={handleClosePopup}  
             />
+            </div>
+           
           </div>
         </div>
       )}

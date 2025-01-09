@@ -10,7 +10,7 @@ html{
   height: 100%;
   width: 100%;
   box-sizing: border-box;
-  background-color: whitesmoke;
+  background: linear-gradient(to bottom, #faf5ff42, #cbbed39e); /* Subtle gradient background */
   font-family: Arial, sans-serif;
   max-width: 70%;
   margin: 0 auto;
@@ -126,7 +126,7 @@ header {
     font-family: Arial, sans-serif;
     max-width: 100%;
     margin: 0 auto;
-    background: linear-gradient(to bottom, #ffffff, #b7b6b6ed); /* Subtle gradient background */
+    background: linear-gradient(to bottom, #faf5ff42, #cbbed39e); /* Subtle gradient background */
     padding: 0px 1% 0px 1%;
   }
  
