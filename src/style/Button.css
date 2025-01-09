@@ -1,0 +1,20 @@
+/* src/BookButton.css */
+.book-button {
+  padding: 10px 20px;
+  background-color: #FF5733; /* Button color */
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.book-button:hover {
+  background-color: #c94e2d; /* Darker shade when hovered */
+}
+
+.book-button:focus {
+  outline: none; /* Remove the focus outline */
+}

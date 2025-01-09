@@ -76,3 +76,57 @@
     padding: 4% 20px;
   }
 }
+
+/* ServiceDetail.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);  /* Background overlay */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  max-height: 80%;
+  overflow-y: auto;
+}
+
+.service-detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service-description {
+  margin-bottom: 15px;
+}
+
+.service-price {
+  font-weight: bold;
+}
+
+.service-image img {
+  max-width: 100%;
+  border-radius: 5px;
+}

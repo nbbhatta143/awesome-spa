@@ -11,9 +11,7 @@ const BookingPage = () => {
   // State to hold form data
   const [formData, setFormData] = useState({
     firstName: '',
-    middleInitial: '',
     lastName: '',
-    email: '',
     phone: '',
     date: '',
     time: '',
@@ -53,9 +51,7 @@ const BookingPage = () => {
     // Clear form data after submission
     setFormData({
       firstName: '',
-      middleInitial: '',
       lastName: '',
-      email: '',
       phone: '',
       date: '',
       time: '',
@@ -80,19 +76,6 @@ const BookingPage = () => {
             required
           />
         </div>
-
-        <div className="form-group">
-          <label htmlFor="middleInitial">Middle Initial</label>
-          <input
-            type="text"
-            id="middleInitial"
-            name="middleInitial"
-            value={formData.middleInitial}
-            onChange={handleChange}
-            maxLength="1" // Allow only one letter
-          />
-        </div>
-
         <div className="form-group">
           <label htmlFor="lastName">Last Name</label>
           <input
@@ -104,19 +87,6 @@ const BookingPage = () => {
             required
           />
         </div>
-
-        <div className="form-group">
-          <label htmlFor="email">Email Address</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-        </div>
-
         <div className="form-group">
           <label htmlFor="phone">Phone Number</label>
           <input

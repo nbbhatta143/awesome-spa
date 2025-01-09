@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import '../style/SpaCard.css';
 import BookButton from '../component/BookButton';
 
-function SpaCard({ images, displayButton, placeholder }) {
+function SpaCard({ images, displayButton, placeholder,displayDetail }) {
   const navigate = useNavigate();
   const cardRefs = useRef([]); // Create refs for all cards
 
@@ -58,7 +58,7 @@ function SpaCard({ images, displayButton, placeholder }) {
       key={index}
       className={`spa-card ${index % 2 === 1 || placeholder % 2 === 1 ? 'reverse' : ''}`}
       ref={(el) => (cardRefs.current[index] = el)} // Assign ref to each card
-      onClick={() => handleServiceNavigation(image.alt)}
+      onClick={() => !displayDetail?handleServiceNavigation(image.alt):""}
     >
       <div className="spa-card-image">
         <img src={image.src} alt={image.alt} />
