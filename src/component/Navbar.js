@@ -2,6 +2,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import '../style/App.css'; // We'll use this for custom styles
 
+
+
 function Navbar({title, isFooter}) {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null); // Reference to the menu container
@@ -66,4 +68,4 @@ function Navbar({title, isFooter}) {
     </nav>
   );
 }
-export default Navbar;
+export default Navbar

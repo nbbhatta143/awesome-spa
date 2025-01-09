@@ -1,18 +1,20 @@
 /* src/BookButton.css */
 .book-button {
-  padding: 10px 20px;
-  background-color: #FF5733; /* Button color */
-  color: white;
-  font-size: 16px;
+  background: linear-gradient(135deg, #D1A1FF, #6A2D9E); /* light purple to beautiful purple */
   border: none;
-  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
   cursor: pointer;
-  margin-top: 10px;
-  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease;
+  margin-bottom: 1%;
+
 }
 
 .book-button:hover {
-  background-color: #c94e2d; /* Darker shade when hovered */
+  background: linear-gradient(135deg, #6A2D9E, #D1A1FF); /* invert gradient on hover */
 }
 
 .book-button:focus {

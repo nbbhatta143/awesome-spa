@@ -50,7 +50,7 @@
 .service-title {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #343a40;
+  color:#6A2D9E;
   margin: 0;
   text-overflow: ellipsis; /* Handle long text gracefully */
   white-space: pre-wrap;  

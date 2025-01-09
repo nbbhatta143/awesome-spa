@@ -26,6 +26,8 @@ header {
 .App-header h3, .logo h2{
   margin: 0px;
   padding: 2px;
+  color:  #6A2D9E; /* Gradient from light purple to deep purple */
+
 }
 
 .navbar {
@@ -90,7 +92,7 @@ header {
   width: 25px;  /* Ensure each bar has enough width */
   height: 4px;  /* Make bars taller for visibility */
   margin: 4px 0;  /* Add space between bars */
-  background-color: black;
+  background: linear-gradient(135deg, #D1A1FF, #6A2D9E); /* Gradient from light purple to deep purple */
   z-index: 2;
 }
 .Services-container {
@@ -103,7 +105,7 @@ header {
 .Services-header {
   display: flex ;
   position: relative;
-  color: black;
+  color: #6A2D9E;
   text-align: center;
   margin-bottom: 10px;
   justify-content: flex-start;
